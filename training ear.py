@@ -13,7 +13,7 @@ PATH_DATA = r'extracted_features\C40'
 def extract_hybrid_features(data_npy):
     if data_npy.ndim == 1:
         ear_seq = data_npy
-        flow_seq = np.zeros_like(ear_seq)  # Beri nilai 0 jika flow tidak ada
+        flow_seq = np.zeros_like(ear_seq) 
     else:
         ear_seq = data_npy[:, 0]
         flow_seq = data_npy[:, 1]
